@@ -1,7 +1,8 @@
 $(function() {
 // used to display product detail
   $('.single_product').click(function(){
-    alert('hey')
+    alert('hey you clicked the product name')
+    $('.single_product_description').show()
   });
 
 // used to add item to cart
