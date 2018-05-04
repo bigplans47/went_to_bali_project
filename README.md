@@ -1,6 +1,9 @@
 Work to add products to shopping cart from index page with ajax. Item should be added to the shopping card and the number of items in the card should update
 -reviewing how ajax works and what is happening when an item is added to the cart
 
+Additional features:
+Ensure that users can't order a negative number of items.
+
 # README
 
 E-commerce site. Uses `bcrypt` and `materialize`. There's a seed file. Set up your own admin. If you have questions, I'll be in Bali with no email. Ask someone else.
