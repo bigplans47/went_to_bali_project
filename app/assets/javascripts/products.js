@@ -1,6 +1,7 @@
 $(function() {
   $('#new_order_item input[type=submit]').click(function() {
-    alert('You clicked add to cart!')
+    // alert('You clicked add to cart!')
+    $(this).parent('form').submit()
   });
 
 });
