@@ -23,9 +23,14 @@ class OrderItemsController < ApplicationController
   def destroy
     @order = current_order
     @item = @order.order_items.find(params[:id])
+    p @item.id, 'here20'
     @item.destroy
     @order.save
-    redirect_to cart_path
+    p 'deleted item'
+    respond_to do |format|
+      format.html { redirect_to cart_path }
+      format.js
+    end
   end
 
   private
