@@ -1,4 +1,5 @@
 Work to add products to shopping cart from index page with ajax. Item should be added to the shopping card and the number of items in the card should update
+-reviewing how ajax works and what is happening when an item is added to the cart
 
 # README
 
