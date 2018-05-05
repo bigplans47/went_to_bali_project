@@ -22,6 +22,15 @@
       </ul>
     </div>
   </nav>
+  <% if current_user && current_user.admin %>
+    <nav>
+      <div class="nav-wrapper">
+        <ul id="nav-mobile" class="left ">
+          <li><%= link_to "Admin View | Add Products", new_product_path %></li>
+        </ul>
+      </div>
+    </nav>
+  <% end %>
 
   <body>
     <% flash.each do |name, msg| %>

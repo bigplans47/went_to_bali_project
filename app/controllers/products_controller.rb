@@ -1,4 +1,7 @@
 class ProductsController < ApplicationController
+  before_action :only =>[:new, :edit, :destroy] do
+    redirect_to products_path unless current_user && current_user.admin
+  end
   before_filter :authorize, except: [:index, :show]
 
   def index
@@ -17,6 +20,13 @@ class ProductsController < ApplicationController
     else
       render :new
     end
+  end
+
+  def destroy
+    @product = Product.find(params[:id])
+    p @product
+    @product.destroy
+    redirect_to products_path
   end
 
   private
