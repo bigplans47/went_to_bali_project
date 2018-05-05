@@ -6,6 +6,7 @@
     <div class="col s4">
       <div class="single_product" id="single_product_<%= product.id %>">
         <h4><%= product.name %></h4>
+        <p class="show_user_detail">Double Click for detail</p>
         <% if current_user && current_user.admin %>
           <p><%= link_to "Edit Product", edit_product_path(product) %></p>
           <p><%= link_to "Delete Product", product_path(product),

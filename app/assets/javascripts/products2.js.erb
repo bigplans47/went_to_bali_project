@@ -7,9 +7,14 @@ $(function() {
     $(this).parent().find('div')[1].id
     let the_div = $(this).parent().find('div')[1].id
     let the_element = document.getElementById(the_div)
-    the_element.style.display = 'block';
-    console.log(the_div)
-    console.log(the_element)
+      console.log(the_element)
+    if ( the_element.style.display == 'none' ) {
+      the_element.style.display = 'block';
+    } else {
+      the_element.style.display = 'none';
+    }
+
+    // the_element.style.display = 'block';
   });
     // let the_id = $(this).parent().attr('class')
     // let the_id = $(this).parent().get(0)
