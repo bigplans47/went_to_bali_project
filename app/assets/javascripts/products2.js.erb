@@ -1,0 +1,20 @@
+$(function() {
+// used to display product detail
+  $('.single_product').click(function(){
+    // alert('hey you clicked the product name with id tbd')
+    // $('.single_product_description_2').toggle()
+    // $('#single_product_description_2').toggle()
+    $(this).parent().find('div')[1].id
+    let the_div = $(this).parent().find('div')[1].id
+    let the_element = document.getElementById(the_div)
+    the_element.style.display = 'block';
+    console.log(the_div)
+    console.log(the_element)
+  });
+    // let the_id = $(this).parent().attr('class')
+    // let the_id = $(this).parent().get(0)
+    // <% p @product, 'yo22' %>
+    // var showDescription = $('.single_product_description').attr('id')
+    // $('"."+"${showDescription}"').toggle()
+    // console.log(showDescription)
+});
